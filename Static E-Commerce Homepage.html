@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Static E-Commerce Homepage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#cart">Cart</a></li>
+        <li><a href="#login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="categories">
+    <h2>Categories</h2>
+    <ul>
+      <li><button onclick="filterProducts('electronics')">Electronics</button></li>
+      <li><button onclick="filterProducts('clothing')">Clothing</button></li>
+    </ul>
+  </section>
+
+  <section id="products">
+    <h2>Featured Products</h2>
+    <div class="product-card">
+      <img src="product1.jpg" alt="Product 1">
+      <h3>Product 1</h3>
+      <p>$100</p>
+    </div>
+    <!-- More products here -->
+  </section>
+
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items">
+      <!-- Dynamically added cart items go here -->
+    </ul>
+    <button id="checkout-btn">Proceed to Checkout</button>
+  </section>
+
+  <section id="product-detail">
+    <h2>Product Name</h2>
+    <p>Description of the product...</p>
+    <p>Price: $100</p>
+    <div id="reviews">
+      <h3>Reviews</h3>
+      <ul>
+        <li>Great product!</li>
+        <!-- More reviews -->
+      </ul>
+      <textarea id="review-text" placeholder="Write a review..."></textarea> <br>
+      <button onclick="addReview()">Submit Review</button>
+    </div>
+  </section>
+
+  <section id="auth">
+    <h2>Login</h2>
+    <form id="login-form">
+      <input type="text" id="username" placeholder="Username" required> <br>
+      <input type="password" id="password" placeholder="Password" required> <br>
+      <button type="submit">Login</button> 
+    </form>
+  </section>
+
+  <footer>
+    <p>Created by Wazeema Amir</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
